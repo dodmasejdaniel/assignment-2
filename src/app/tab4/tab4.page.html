@@ -1,0 +1,49 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      About
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Developer Information</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-explore-container name="Developer Information"></app-explore-container>
+</ion-content>
+<ion-app>
+  <ion-split-pane when="sm" content-id="main-content">
+    <div class="ion-page" id="main-content">
+      <ion-header>
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-toggle>
+              <ion-button>
+                <ion-icon slot="icon-only" name="menu"></ion-icon>
+              </ion-button>
+            </ion-menu-toggle>
+          </ion-buttons>
+          <ion-title>Header</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
+        <h1>Developer Information</h1>
+        <h3>Chris Cornell</h3>
+        <h11>@chriscornell</h11>
+        <p><h13>Joined</h13></p>
+        <p><h14>2022</h14></p>
+      </ion-content>
+
+      <ion-content class="ion-padding">
+        <h1>App Information</h1>
+        <h3>Node.js</h3>
+        <h11>Version</h11>
+        <p><h13>v16.17.1</h13></p>
+      </ion-content>
+    </div>
+  </ion-split-pane>
+</ion-app>

@@ -1,0 +1,9 @@
+{
+  "name": "Assignment 1",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "2b59528b"
+}

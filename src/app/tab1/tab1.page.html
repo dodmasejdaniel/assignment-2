@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p style="font-size: 2rem">Astronauts in Space: </p>
+
+ <div>
+    Messsage: {{spaceAstronautData?.message?? 'No message given'}}
+  </div>
+
+  <div>
+    Number: {{spaceAstronautData?.number?? 'No number given'}}
+  </div><br>
+
+    <div *ngFor ="let spaceAstronaut of spaceAstronautData?.people">
+      <div *ngIf="spaceAstronautData.people; else elseBlock">
+          <div> {{spaceAstronaut?.name?? 'No name for this astro'}}</div>
+          <div> {{spaceAstronaut?.craft?? 'No craft for this astro'}}</div><br>
+      </div>
+      <ng-template #elseBlock>
+        No People in this scope
+      </ng-template>
+    </div>
+</ion-content>
